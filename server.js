@@ -17,7 +17,8 @@ app.use(routes);
 
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_84055qzl:hbdpo8j0vg4bf97hkgun8u6k99@ds137611.mlab.com:37611/heroku_84055qzl");
-mongoose.connect("mongodb://heroku_84055qzl:hbdpo8j0vg4bf97hkgun8u6k99@ds137611.mlab.com:37611/heroku_84055qzl");
+// mongoose.connect("mongodb://heroku_84055qzl:hbdpo8j0vg4bf97hkgun8u6k99@ds137611.mlab.com:37611/heroku_84055qzl");
+mongoose.connect("mongodb://heroku_1r1qq8kw:hello123@ds143451.mlab.com:43451/heroku_1r1qq8kw");
 
 // Start the API server
 app.listen(PORT, function() {
