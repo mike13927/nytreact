@@ -1,21 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Articles from "./pages/Articles";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import configureStore from "./configureStore";
+import AppContainer from "./components/AppContainer";
+
+const store = configureStore();
 
 const App = () => (
-  <Router>
-    <div>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={Articles} />
-        <Route exact path="/articles" component={Articles} />
-        <Route component={NoMatch} />
-      </Switch>
-    </div>
-  </Router>
+  <Provider store={store}>
+    <AppContainer />
+  </Provider>
 );
 
 export default App;
