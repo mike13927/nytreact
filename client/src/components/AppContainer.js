@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { reAuthUser } from "../reducer";
 import NavBar from "./NavBar";
 import Home from "./Home";
+import Articles from "../pages/Articles";
 import Register from "./Register";
 import Login from "./Login";
 
@@ -17,7 +18,7 @@ class AppContainer extends Component {
       <Router>
         <div style={{ margin: "auto", width: 400 }}>
           <NavBar />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Articles} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
         </div>
