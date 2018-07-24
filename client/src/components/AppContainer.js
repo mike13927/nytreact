@@ -18,7 +18,7 @@ class AppContainer extends Component {
       <Router>
         <div style={{ margin: "auto", width: 400 }}>
           <NavBar />
-          <Route exact path="/" component={Articles} />
+          <Route exact path="/" component={Home} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
         </div>
